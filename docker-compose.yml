@@ -1,0 +1,44 @@
+version: '3'
+services:
+  api-gateway:
+    image: node:alpine
+    restart: always
+    volumes:
+      - ../obsidium-api-gateway/.:/app
+    working_dir: /app
+    networks:
+      - backend
+    command: sh -c "yarn && yarn run dev"
+    environment:
+      NODE_ENV: development
+    ports:
+      - "3001:3001"
+  api-postit:
+    image: node:alpine
+    restart: always
+    volumes:
+      - ../obsidium-postit/.:/app
+    working_dir: /app
+    networks:
+      - backend
+    command: sh -c "yarn && yarn run dev"
+    environment:
+      NODE_ENV: development
+    ports:
+      - "3002:3002"
+  api-users:
+    image: node:alpine
+    restart: always
+    volumes:
+      - ../obsidium-users-api/.:/app
+    working_dir: /app
+    command: sh -c "yarn && yarn run dev"
+    environment:
+      NODE_ENV: development
+    networks:
+      - backend
+    ports:
+      - "3003:3003"
+networks:
+  backend:
+    driver: bridge
