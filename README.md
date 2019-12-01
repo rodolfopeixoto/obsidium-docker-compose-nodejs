@@ -24,7 +24,7 @@ Aplicativo (React Native)
  
  É necessario o uso do Expo
 
-[https://github.com/amog-oliveira/obsidium](https://github.com/amog-oliveira/obsidium)
+[https://github.com/amog-oliveira/obsidium/tree/develop](https://github.com/amog-oliveira/obsidium/tree/develop)
 
 Autenticação e Autorização
 
