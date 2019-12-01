@@ -1,8 +1,8 @@
 # obsidium-docker-compose-nodejs
 
-* Requisitos
- - Docker
- - Docker Compose
+Requisitos
+ * Docker
+ * Docker Compose
 
 Docker-compose desenvolvido para inicializar os microsserviços
 
