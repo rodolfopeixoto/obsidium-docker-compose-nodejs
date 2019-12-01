@@ -6,6 +6,10 @@ Requisitos
 
 Docker-compose desenvolvido para inicializar os microsserviços
 
+#### Instruções
+
+Clone para o seu computador todos os microsserviços
+
 Acesse a pasta
 
 ```
